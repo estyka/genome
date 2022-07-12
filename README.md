@@ -18,7 +18,7 @@ A webserver for downloading genomes of organisms/bacteria from NCBI, with added 
 <br/>
 Example:
 <br/>
-![page-3.png](https://github.com/estyka/genomedownload/blob/main/app_dg/for_readme/page%203.png?raw=true)
+![page-3.png](https://raw.githubusercontent.com/estyka/genomedownload/main/app_dg/for_readme/page%203.png?token=GHSAT0AAAAAABUQ7EJHF4PXNW724FYTO566YWNEPVA)
  
  * After a few moments you should see:
  ![page-4.png](https://github.com/estyka/genomedownload/blob/main/app_dg/for_readme/page%204.png?raw=true)
