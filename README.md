@@ -10,9 +10,6 @@ A webserver for downloading filtered genome assemblies of organisms from NCBI As
 * You will see the following page:
 <img src="app_dg/for_readme/page%201.png" width="600" height="276" />
 
-<!--- ![image](app_dg/for_readme/page%201.png) -->
-
-
 * Click ```SUBMIT JOB```
 * Fill in:
     - ```Organism Name``` - according to organism of interest.
@@ -20,16 +17,12 @@ A webserver for downloading filtered genome assemblies of organisms from NCBI As
 * Click ```SUBMIT```
 <br/>
 
-Example:
-<!---![image-example](app_dg/for_readme/example.png)-->
-<img src="app_dg/for_readme/example.png" width="600" height="275" />
+Example: <img src="app_dg/for_readme/example.png" width="600" height="275" />
 
  
  * After a few moments you should see ```"Your process is running"```.
  
- * When the process is complete, you will get an email notifying you with a link to the following page:
- <img src="app_dg/for_readme/page%205.png" width="600" height="281" />
- <!---![image-export](app_dg/for_readme/page%205.png)-->
+ * When the process is complete, you will get an email notifying you with a link to the following page: <img src="app_dg/for_readme/page%205.png" width="600" height="281" />
  * Choose ```EXPORT``` to download the results to your computer - this will be a ```.zip``` file containing the genome assemblies of the chosen organism, with the chosen filters.
  
 ## Filters
