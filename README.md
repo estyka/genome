@@ -19,13 +19,12 @@ A webserver for downloading genomes of organisms/bacteria from NCBI, with added 
 <br/>
 
 Example:
-<br/>
 ![image3](app_dg/for_readme/example.png)
  
  * After a few moments you should see _"Your process is running"_.
  
  * When the process is complete, you will get an email notifying you with a link to the following page:
- ![page-5.png](https://github.com/estyka/genomedownload/blob/main/app_dg/for_readme/page%205.png?raw=true)
+ ![image-export](app_dg/for_readme/page%205.png)
  * Choose _EXPORT_ to download the results to your computer - this will be a zip file containing the genome assemblies of the chosen organism.
  
 ## Code
