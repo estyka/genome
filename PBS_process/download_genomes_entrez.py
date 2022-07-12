@@ -138,7 +138,7 @@ def run(save_folder, term, filter_by_level=False, filter_by_date=False):
 
 def main():
     args = sys.argv[1:]
-    run(args[0], args[1], filter_by_level=bool(args[2]), filter_by_date=bool(args[3]))
+    run(args[0], args[1], filter_by_level=False, filter_by_date=False)
 
 
 if __name__ == "__main__":
