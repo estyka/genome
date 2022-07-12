@@ -8,9 +8,9 @@ A webserver for downloading filtered genome assemblies of organisms from NCBI As
 * Make sure you are connected to the VPN of the Tel Aviv University
 * Search for the URL: http://genomedownload.tau.ac.il/
 * You will see the following page:
-<img src="app_dg/for_readme/page%201.png" width="500" height="230" />
+<img src="app_dg/for_readme/page%201.png" width="600" height="276" />
 
-![image](app_dg/for_readme/page%201.png)
+<!--- ![image](app_dg/for_readme/page%201.png) -->
 
 
 * Click ```SUBMIT JOB```
@@ -21,12 +21,15 @@ A webserver for downloading filtered genome assemblies of organisms from NCBI As
 <br/>
 
 Example:
-![image3](app_dg/for_readme/example.png)
+<!---![image-example](app_dg/for_readme/example.png)-->
+<img src="app_dg/for_readme/example.png" width="600" height="275" />
+
  
  * After a few moments you should see ```"Your process is running"```.
  
  * When the process is complete, you will get an email notifying you with a link to the following page:
- ![image-export](app_dg/for_readme/page%205.png)
+ <img src="app_dg/for_readme/page%205.png" width="600" height="281" />
+ <!---![image-export](app_dg/for_readme/page%205.png)-->
  * Choose ```EXPORT``` to download the results to your computer - this will be a ```.zip``` file containing the genome assemblies of the chosen organism, with the chosen filters.
  
 ## Filters
