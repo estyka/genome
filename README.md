@@ -17,7 +17,7 @@ A webserver for downloading filtered genome assemblies of organisms from NCBI As
 * Click ```SUBMIT```
 <br/>
 
-####Example: 
+#### Example: 
 <img src="app_dg/for_readme/example.png" width="600" height="275" />
 
  * After a few moments you should see ```"Your process is running"```.
