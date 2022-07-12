@@ -4,7 +4,7 @@ from datetime import datetime
 from ftplib import FTP
 from helpers import timeit
 import traceback
-import PBS_process.filters as filters
+import filters as filters
 
 """
 TODO:
