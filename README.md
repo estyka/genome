@@ -2,23 +2,19 @@
 
 A webserver for downloading filtered genome assemblies of organisms from NCBI Assembly database. 
 
-
- 
 ## How to use
-* Make sure you are connected to the VPN of the Tel Aviv University
+* Make sure you are connected to the VPN of Tel Aviv University
 * Search for the URL: http://genomedownload.tau.ac.il/
-* You will see the following page:
-<img src="app_dg/for_readme/page%201.png" width="600" height="276" />
+* You will see the following page: <img src="app_dg/for_readme/page%201.png" width="600" height="276" />
 
 * Click ```SUBMIT JOB```
 * Fill in:
     - ```Organism Name``` - according to organism of interest.
-    - ```Email Address``` - email address to receive notification of the results.
-* Click ```SUBMIT```
+    - ```Email Address``` - your email address to receive notification and URL to the results.
+    
+    **Example**: <img src="app_dg/for_readme/example.png" width="600" height="275" />
 
-#### Example: 
-<img src="app_dg/for_readme/example.png" width="600" height="275" />
-
+ * Click ```SUBMIT```
  * After a few moments you should see ```"Your process is running"```.
  
  * When the process is complete, you will get an email notifying you with a link to the following page: <img src="app_dg/for_readme/page%205.png" width="600" height="281" />
@@ -49,7 +45,6 @@ The code can be found in the university server in two different places:
 
 ## Future Add-Ons
 
-
 **Input Validation**: Need to add a validation for the ```organism name``` the user inputs. 
 This can be done by searching the NCBI database 
 (similarly to the way it is done in the ```download_genomes_entrez.py``` code, and checking that there are assemblies for this organism.
@@ -60,5 +55,5 @@ This can be done by checking that the  ```/bioseq/data/results/genomedownload/{p
 **Timeout**: Need to add a timeout for processes that don't finish, in order to be able to notify the user that the process failed,
 and also to not take up CPU time.
 
-**Entrez email address**: When searching via Entrez, one needs to put in an email address - the email is currently estykatzeff@mail.tau.ac.il but should be the email address of the user (to be notified directly about issues).
+**Entrez email address**: When searching via Entrez, one needs to put in an email address - currently the email address is fixed but needs to be modified to receive the input email address of the user (so they can be notified directly about issues with the database).
 
