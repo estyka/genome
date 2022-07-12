@@ -8,7 +8,8 @@ A webserver for downloading genomes of organisms/bacteria from NCBI, with added 
 * Make sure you are connected to the VPN of the Tel Aviv University
 * Search for the URL: http://genomedownload.tau.ac.il/
 * You will see the following page:
-![page1 image](https://github.com/estyka/genomedownload/blob/main/app_dg/for_readme/page%201.png?raw=true)
+![image](app_dg/for_readme/page%201.png)
+
 
 * Click _SUBMIT JOB_
 * Fill in:
@@ -16,12 +17,12 @@ A webserver for downloading genomes of organisms/bacteria from NCBI, with added 
     - _Email Address_ - email address to receive notification of the results.
 * Click _SUBMIT_
 <br/>
+
 Example:
 <br/>
-![page-3.png](https://raw.githubusercontent.com/estyka/genomedownload/main/app_dg/for_readme/page%203.png?token=GHSAT0AAAAAABUQ7EJHF4PXNW724FYTO566YWNEPVA)
+![image3](app_dg/for_readme/example.png)
  
- * After a few moments you should see:
- ![page-4.png](https://github.com/estyka/genomedownload/blob/main/app_dg/for_readme/page%204.png?raw=true)
+ * After a few moments you should see _"Your process is running"_.
  
  * When the process is complete, you will get an email notifying you with a link to the following page:
  ![page-5.png](https://github.com/estyka/genomedownload/blob/main/app_dg/for_readme/page%205.png?raw=true)
