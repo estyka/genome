@@ -8,7 +8,7 @@ A webserver for downloading filtered genome assemblies of organisms from NCBI As
 * Make sure you are connected to the VPN of the Tel Aviv University
 * Search for the URL: http://genomedownload.tau.ac.il/
 * You will see the following page:
-<img src="app_dg/for_readme/page%201.png" width="200" height="100" />
+<img src="app_dg/for_readme/page%201.png" width="500" height="230" />
 
 ![image](app_dg/for_readme/page%201.png)
 
