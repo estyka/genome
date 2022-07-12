@@ -15,7 +15,6 @@ A webserver for downloading filtered genome assemblies of organisms from NCBI As
     - ```Organism Name``` - according to organism of interest.
     - ```Email Address``` - email address to receive notification of the results.
 * Click ```SUBMIT```
-<br/>
 
 #### Example: 
 <img src="app_dg/for_readme/example.png" width="600" height="275" />
