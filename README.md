@@ -51,10 +51,6 @@ The code can be found in the university server in two different places:
 
 ## Future Add-Ons
 
-**Input Validation**: Need to add a validation for the ```organism name``` the user inputs. 
-This can be done by searching the NCBI database 
-(similarly to the way it is done in the ```download_genomes_entrez.py``` code, and checking that there are assemblies for this organism.
-
 **Output Validation**: Need to add a validation that the process succeeded, and if not - notify the user by sending an error page.
 This can be done by checking that the  ```/bioseq/data/results/genomedownload/{process-id}/results``` folder contains a ```.zip``` file after the process is finished. 
 

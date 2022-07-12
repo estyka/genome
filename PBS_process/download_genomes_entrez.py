@@ -4,6 +4,7 @@ from datetime import datetime
 from ftplib import FTP
 from helpers import timeit
 import traceback
+import PBS_process.filters as filters
 
 """
 TODO:
@@ -15,6 +16,7 @@ TODO:
 SERVER_PATH = r"ftp.ncbi.nlm.nih.gov"
 NUMBER_OF_TRIES = 5  # change to bigger number once stable
 count_failed_download = [0]
+statsFile_to_url_mapping = {}  # TODO: this is a heavy object, make more efficient in future (append to file instead)
 
 def get_assembly_summary(id):
     """Get esummary for an entrez id"""
@@ -82,7 +84,7 @@ def get_assembly_ids(term):
 
 # Download genbank assemblies for a given search term.
 @timeit
-def get_assemblies(save_folder, term):
+def get_assemblies(save_folder, term, filter_by_level, filter_by_date):
     start_all = datetime.now()
     ids = get_assembly_ids(term)
     print(f'found {len(ids)} ids')
@@ -98,13 +100,14 @@ def get_assemblies(save_folder, term):
         summary = get_assembly_summary(id)
         url_genbank = summary['DocumentSummarySet']['DocumentSummary'][0]['FtpPath_GenBank']  # get ftp url
         if url_genbank == '':
-            print(f'there is no exisiting assembly for: {url_genbank}')
+            print(f'there is no exisiting assembly for: {summary}')
             continue
 
         # download stats
         stats_file_path = download_files(url_genbank, stats_folder)
+        statsFile_to_url_mapping[stats_file_path] = url_genbank
 
-        # checking if assembly is refseq
+        # checking if assembly is refseq - TODO: can remove this later
         if os.path.isfile(stats_file_path):
             with open(stats_file_path) as stats_file:
                 for line in stats_file:
@@ -112,10 +115,12 @@ def get_assemblies(save_folder, term):
                         is_refseq = True
                         refseq_assemblies_count += 1
 
-        if is_refseq: # only download assemblies which are refseq (Future: add this as option?)
-            fasta_file_path = download_files(url_genbank, fasta_folder, is_fasta=True)  # download assemblies
-        else:
-            print(f'{url_genbank} is not a refseq. skipping.')
+    df = filters.get_assemblies_df(stats_folder, statsFile_to_url_mapping, filter_by_level=filter_by_level, filter_by_date=filter_by_date)
+
+    # download fastas returned from filters
+    for index, row in df.iterrows():
+        url_genbank = row["genbank_url"]
+        fasta_file_path = download_files(url_genbank, fasta_folder)
 
     end = datetime.now()
     print(f'average download time per file: {(end - start_all) / len(ids)}')
@@ -128,18 +133,18 @@ def get_assemblies(save_folder, term):
 
 
 def run(save_folder, term, filter_by_level=False, filter_by_date=False):
-    get_assemblies(save_folder, term)
+    get_assemblies(save_folder, term, filter_by_level=filter_by_level, filter_by_date=filter_by_date)
 
 
 def main():
     args = sys.argv[1:]
-    run(args[0], args[1], filter_by_level=False, filter_by_date=False)
+    run(args[0], args[1], filter_by_level=bool(args[2]), filter_by_date=bool(args[3]))
 
 
 if __name__ == "__main__":
     main()
 
 # path_to_save_dir = r"C:\Users\97252\Documents\year_4\bio_project_data\download_results"
-# bacteria2search = "Xanthomonas campestris"
-# # bacteria2search = "Xanthomonas citri"
+# # bacteria2search = "Xanthomonas campestris"
+# bacteria2search = "abiotrophia defectiva"
 # run(path_to_save_dir, bacteria2search, filter_by_level=False, filter_by_date=False)
