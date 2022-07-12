@@ -8,7 +8,8 @@ A webserver for downloading genomes of organisms/bacteria from NCBI, with added 
 * Make sure you are connected to the VPN of the Tel Aviv University
 * Search for the URL: http://genomedownload.tau.ac.il/
 * You will see the following page:
-[![page-1.png](https://i.postimg.cc/W3g3b6Pb/page-1.png)](https://postimg.cc/7GPDKz6p)
+![page1 image](https://github.com/estyka/genomedownload/blob/main/app_dg/for_readme/page%201.png?raw=true)
+
 * Click _SUBMIT JOB_
 * Fill in:
     - _Organism Name_ - according to organism of interest.
