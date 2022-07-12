@@ -18,6 +18,7 @@ A webserver for downloading filtered genome assemblies of organisms from NCBI As
 <br/>
 
 Example: 
+
 <img src="app_dg/for_readme/example.png" width="600" height="275" />
 
  
