@@ -6,6 +6,7 @@ A webserver for downloading filtered genome assemblies of organisms from NCBI As
 * Make sure you are connected to the VPN of Tel Aviv University
 * Search for the URL: http://genomedownload.tau.ac.il/
 * You will see the following page: 
+  
   <img src="app_dg/for_readme/page%201.png" width="600" height="276" />
 
 * Click ```SUBMIT JOB```
@@ -14,6 +15,7 @@ A webserver for downloading filtered genome assemblies of organisms from NCBI As
     - ```Email Address``` - your email address to receive notification and URL to the results.
     
     **Example**: 
+    
     <img src="app_dg/for_readme/example.png" width="600" height="275" />
 
  * Click ```SUBMIT```
