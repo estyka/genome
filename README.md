@@ -17,6 +17,7 @@ A webserver for downloading genomes of organisms/bacteria from NCBI, with added 
 * Click _SUBMIT_
 <br/>
 Example:
+<br/>
 ![page-3.png](https://github.com/estyka/genomedownload/blob/main/app_dg/for_readme/page%203.png?raw=true)
  
  * After a few moments you should see:
