@@ -17,13 +17,13 @@ A webserver for downloading genomes of organisms/bacteria from NCBI, with added 
 * Click _SUBMIT_
 <br/>
 Example:
-[![page-3.png](https://i.postimg.cc/Y2FnM4Gn/page-3.png)](https://postimg.cc/Z0TFL5Lp)
+![page-3.png](https://github.com/estyka/genomedownload/blob/main/app_dg/for_readme/page%203.png?raw=true)
  
  * After a few moments you should see:
- [![page-4.png](https://i.postimg.cc/wTC93R01/page-4.png)](https://postimg.cc/JG5f20w8)
+ ![page-4.png](https://github.com/estyka/genomedownload/blob/main/app_dg/for_readme/page%204.png?raw=true)
  
  * When the process is complete, you will get an email notifying you with a link to the following page:
- [![page-5.png](https://i.postimg.cc/9QXHDPyF/page-5.png)](https://postimg.cc/svLN8hnt)
+ ![page-5.png](https://github.com/estyka/genomedownload/blob/main/app_dg/for_readme/page%205.png?raw=true)
  * Choose _EXPORT_ to download the results to your computer - this will be a zip file containing the genome assemblies of the chosen organism.
  
 ## Code
