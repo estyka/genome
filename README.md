@@ -2,6 +2,12 @@
 
 A webserver for downloading filtered genome assemblies of organisms from NCBI Assembly database. 
 
+## Purpose
+The webserver allows a user to specify an organism of interest and download genome assemblies of this organism. 
+The webserver has two main purposes:
+1. The process of downloading genomes will be easy for anyone.
+2. The downloaded genome assemblies will be a small and representing set, according to the filtering level specified by the user.
+
 ## How to use
 * Make sure you are connected to the VPN of Tel Aviv University
 * Search for the URL: http://genomedownload.tau.ac.il/
