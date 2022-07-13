@@ -40,9 +40,9 @@ We will present the filters that are currently being used:
 - **Assembly Level**: we know of four different assembly levels, ordered from best to least: Complete Genome, Chromosome, Scaffold, Contig.
 - **Date**: The most recent update date of this assembly.
 
-Currently the code filters only according to ```Refseq```.
+Currently the user does not have the option to specify the filtering level. In addition, the code filters only according to ```Refseq```.
 The options of filtering according to ```Assembly Level``` and ```Date``` are available in the code (as inputs), 
-but need to be adjusted to the back and front end code to allow the users the option to choose the filters they are interested in.   
+but need to be adjusted to the back and front end code (webserver flow) to allow the users the option to choose the filters they are interested in.   
 
 ## Code
 The code can be found in the university server in two different places:
